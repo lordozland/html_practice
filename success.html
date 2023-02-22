@@ -7,6 +7,22 @@
     <title>Success</title>
 </head>
 <body>
-    <h1>Here</h1>
+    <main>
+		<p><a href="S09-01.html">Back to form</a></p>
+
+		<h2>Success!</h2>
+		<p>Thanks for signing up for our newsletter.</p><br><hr>
+		<h4>You used the following name and email to sign-up</h4>
+		<p id="signup"></p>
+		
+		<script>
+			const resultsList = document.getElementById('signup')
+			new URLSearchParams(window.location.search).forEach((value,name) => {
+				resultsList.append(`${name}: ${value}`)
+				resultsList.append(document.createElement('br'))
+			})
+		</script>
+
+  </main>
 </body>
 </html>
