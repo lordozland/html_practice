@@ -1,6 +1,7 @@
 body {
     font-family: 'Crimson Text', serif;
     background-color: rgba(174, 174, 174, 0.701);
+    line-height: 150%;
 }
 
 p {
